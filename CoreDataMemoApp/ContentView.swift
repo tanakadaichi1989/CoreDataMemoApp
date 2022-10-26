@@ -34,6 +34,15 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.automatic)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AddMemoView()) {
+                        Text("新規作成")
+                    }
+                }
+            }
+
         }
     }
 }
