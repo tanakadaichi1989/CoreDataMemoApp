@@ -33,6 +33,7 @@ struct ContentView: View {
                             .lineLimit(1)
                     }
                 }
+                .onDelete(perform: deleteMemo)
             }
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
@@ -44,6 +45,14 @@ struct ContentView: View {
             }
 
         }
+    }
+    
+    private func deleteMemo(offsets: IndexSet) {
+        offsets.forEach { index in
+            viewContext.delete(memos[index])
+        }
+        
+        try? viewContext.save()
     }
 }
 
