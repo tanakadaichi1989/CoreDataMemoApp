@@ -1,2 +1,1 @@
 # CoreDataMemoApp
-# CoreDataMemoApp
