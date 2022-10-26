@@ -20,17 +20,19 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(memos) { memo in
-                    VStack {
-                        Text(memo.title ?? "タイトルなし")
-                            .font(.subheadline)
-                            .foregroundColor(.primary)
-                            .frame(maxWidth: .infinity ,alignment: .leading)
-                            .lineLimit(1)
-                        Text(memo.stringUpdatedAt)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .lineLimit(1)
+                    NavigationLink(destination: EditMemoView(memo: memo)){
+                        VStack {
+                            Text(memo.title ?? "タイトルなし")
+                                .font(.subheadline)
+                                .foregroundColor(.primary)
+                                .frame(maxWidth: .infinity ,alignment: .leading)
+                                .lineLimit(1)
+                            Text(memo.stringUpdatedAt)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .lineLimit(1)
+                        }
                     }
                 }
                 .onDelete(perform: deleteMemo)
