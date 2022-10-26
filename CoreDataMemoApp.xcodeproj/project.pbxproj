@@ -18,6 +18,7 @@
 		A195B3D72909559F005A7D61 /* CoreDataMemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195B3D62909559F005A7D61 /* CoreDataMemoAppUITestsLaunchTests.swift */; };
 		A195B3E929095AC4005A7D61 /* Memo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195B3E729095AC4005A7D61 /* Memo+CoreDataClass.swift */; };
 		A195B3EA29095AC4005A7D61 /* Memo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195B3E829095AC4005A7D61 /* Memo+CoreDataProperties.swift */; };
+		A195B3EC29096239005A7D61 /* AddMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195B3EB29096239005A7D61 /* AddMemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A195B3D62909559F005A7D61 /* CoreDataMemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A195B3E729095AC4005A7D61 /* Memo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A195B3E829095AC4005A7D61 /* Memo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A195B3EB29096239005A7D61 /* AddMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				A195B3B42909559E005A7D61 /* CoreDataMemoAppApp.swift */,
 				A195B3B62909559E005A7D61 /* ContentView.swift */,
+				A195B3EB29096239005A7D61 /* AddMemoView.swift */,
 				A195B3B82909559F005A7D61 /* Assets.xcassets */,
 				A195B3BD2909559F005A7D61 /* Persistence.swift */,
 				A195B3BF2909559F005A7D61 /* CoreDataMemoApp.xcdatamodeld */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A195B3EC29096239005A7D61 /* AddMemoView.swift in Sources */,
 				A195B3E929095AC4005A7D61 /* Memo+CoreDataClass.swift in Sources */,
 				A195B3BE2909559F005A7D61 /* Persistence.swift in Sources */,
 				A195B3B72909559E005A7D61 /* ContentView.swift in Sources */,
